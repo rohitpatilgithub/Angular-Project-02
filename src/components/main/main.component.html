@@ -1,0 +1,53 @@
+<div class="box">
+    <div id="container">
+        <div id="nav">
+            <h1>Weather App</h1>
+            <h1>{{weatherData.date}}</h1>
+            <h1>@if (weatherData.time > '04:00' && weatherData.time < '12:00' ) { Good Morning {{weatherData.time}} }
+                    @else if (weatherData.time> '12:00' && weatherData.time < '19:00' ) { Good Evening
+                        {{weatherData.time}} } @else if(weatherData.time > '19:00' && weatherData.time < '4:00') {Good Night {{weatherData.time}}}</h1>
+        </div>
+        <div id="content">
+            <div id="content1">
+                <h1>@if (val === 'C') {
+                    <h1>{{weatherData.temperatureC}}°c</h1>
+                }
+                @else if (val === 'F') {
+                    <h1>{{weatherData.temperatureF}}°f</h1>
+                }
+                @else {
+                    <h1>Error</h1>
+                }</h1>
+                <h2>{{weatherData.condition}}</h2>
+                <input type="text" placeholder="Location" [(ngModel)]="city" (input)="onCityChange()">
+                <select name="" id="" class="custom-select" [(ngModel)]="val" (change)="fetchTemp()">
+                    <option value="">Select</option>
+                    <option value="C">Celcius</option>
+                    <option value="F">Farenhite</option>
+                </select>
+            </div>
+            <div id="content2">
+                <div id="col1">
+                    <p>Temp </p>
+                    <p>Speed </p>
+                    <p>Humidity </p>
+                    <p>Country </p>
+                </div>
+                <div id="col2">
+                    <p>@if (val === 'C') {
+                        <p>{{weatherData.temperatureC}}°c</p>
+                    }
+                    @else if (val === 'F') {
+                        <p>{{weatherData.temperatureF}}°f</p>
+                    }
+                    @else{
+                        <p>Error</p>
+                    }</p>
+                    <p>{{weatherData.windSpeed}} mph</p>
+                    <p>{{weatherData.humidity}}</p>
+                    <p>{{weatherData.country}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
