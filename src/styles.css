@@ -11,14 +11,14 @@ html,body{
 
 @font-face {
     font-family: 'MyFont';
-    src: url('assets/Gilroy-Bold.ttf') format(truetype);
+    src: url('/assets/Gilroy-Bold.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyFont-Light';
-    src: url('assets/Gilroy-Light.ttf') format(truetype);
+    src: url('/assets/Gilroy-Light.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
