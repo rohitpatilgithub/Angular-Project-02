@@ -4,7 +4,8 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Output
 
-![Alt text](images/Screenshot 2025-02-21 065146.png)
+![SS](https://github.com/user-attachments/assets/52df0e4e-3765-412b-8398-cc885a1bde6b)
+
 
 ## Development server
 
